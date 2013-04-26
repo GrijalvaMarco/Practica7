@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/Practica7.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="637 751">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Practica 7</property>
+          </widget>
+          <packing>
+            <property name="X">247</property>
+            <property name="Y">28</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lNombre">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombre</property>
+          </widget>
+          <packing>
+            <property name="X">43</property>
+            <property name="Y">87</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lCodigo">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Código</property>
+          </widget>
+          <packing>
+            <property name="X">51</property>
+            <property name="Y">111</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="eNombre">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">126</property>
+            <property name="Y">84</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lGrupo">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Grupo</property>
+          </widget>
+          <packing>
+            <property name="X">342</property>
+            <property name="Y">76</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lPregunta1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">1.-Cúal es mi nombre?</property>
+          </widget>
+          <packing>
+            <property name="X">36</property>
+            <property name="Y">174</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="radiobutton1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Joshua</property>
+            <property name="Active">True</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">40</property>
+            <property name="Y">200</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="radiobutton2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Marco</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">151</property>
+            <property name="Y">199</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="radiobutton3">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Mariano</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">251</property>
+            <property name="Y">197</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="radiobutton4">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Pepe</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">374</property>
+            <property name="Y">198</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lPregunta2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">2.-Cuanto es 2 + 2?</property>
+          </widget>
+          <packing>
+            <property name="X">44</property>
+            <property name="Y">253</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="combobox1">
+            <property name="MemberName" />
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes">A
+B
+C
+D
+E</property>
+            <property name="Active">0</property>
+          </widget>
+          <packing>
+            <property name="X">406</property>
+            <property name="Y">71</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.SpinButton" id="spinbutton1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Upper">100</property>
+            <property name="PageIncrement">10</property>
+            <property name="StepIncrement">1</property>
+            <property name="ClimbRate">1</property>
+            <property name="Numeric">True</property>
+          </widget>
+          <packing>
+            <property name="X">61</property>
+            <property name="Y">288</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.CheckButton" id="checkOpc1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">México</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">42</property>
+            <property name="Y">378</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.CheckButton" id="checkOpc2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">España</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">154</property>
+            <property name="Y">376</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.CheckButton" id="checkOpc3">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Japón</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">248</property>
+            <property name="Y">373</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.CheckButton" id="checkOpc4">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Chile</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">338</property>
+            <property name="Y">375</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lPregunta4">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">4.-Indique la fecha de la independencia de México</property>
+          </widget>
+          <packing>
+            <property name="X">46</property>
+            <property name="Y">435</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lPregunta3">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">3.-De los siguientes paises, cuales son de America?</property>
+          </widget>
+          <packing>
+            <property name="X">42</property>
+            <property name="Y">340</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Calendar" id="calendar1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="DisplayOptions">35</property>
+          </widget>
+          <packing>
+            <property name="X">49</property>
+            <property name="Y">487</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="botonTerminar">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Terminar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">337</property>
+            <property name="Y">673</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="eCodigo">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">126</property>
+            <property name="Y">122</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
